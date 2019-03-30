@@ -233,72 +233,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../NS/NSCalendar.html">
-            
-                <a href="../NS/NSCalendar.html">
-            
-                    
-                    NSCalendar
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.2" data-path="../NS/NSDate.html">
-            
-                <a href="../NS/NSDate.html">
-            
-                    
-                    NSDate
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.3" data-path="../NS/NSTimer.html">
-            
-                <a href="../NS/NSTimer.html">
-            
-                    
-                    NSTimer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="../NS/NSFileManager.html">
-            
-                <a href="../NS/NSFileManager.html">
-            
-                    
-                    NSFileManager
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.5" data-path="../NS/NSUserDefaults.html">
-            
-                <a href="../NS/NSUserDefaults.html">
-            
-                    
-                    NSUserDefaults
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.6" data-path="../NS/NSObject.html">
+        <li class="chapter " data-level="2.1.1" data-path="../NS/NSObject.html">
             
                 <a href="../NS/NSObject.html">
             
@@ -311,7 +246,85 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="../NS/NSThread.html">
+        <li class="chapter " data-level="2.1.2" data-path="../NS/NSMutableArray.html">
+            
+                <a href="../NS/NSMutableArray.html">
+            
+                    
+                    NSMutableArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../NS/NSCalendar.html">
+            
+                <a href="../NS/NSCalendar.html">
+            
+                    
+                    NSCalendar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../NS/NSDate.html">
+            
+                <a href="../NS/NSDate.html">
+            
+                    
+                    NSDate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../NS/NSTimer.html">
+            
+                <a href="../NS/NSTimer.html">
+            
+                    
+                    NSTimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../NS/NSFileManager.html">
+            
+                <a href="../NS/NSFileManager.html">
+            
+                    
+                    NSFileManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../NS/NSUserDefaults.html">
+            
+                <a href="../NS/NSUserDefaults.html">
+            
+                    
+                    NSUserDefaults
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../NS/NSThread.html">
             
                 <a href="../NS/NSThread.html">
             
@@ -458,17 +471,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="method-to-convert-hex-string-to-uicolor">method to convert hex string to UIColor</h4>
-<pre><code class="lang-objective-c">-(UIColor *)colorFromHex:(NSString *)hex {
-    unsigned int c;
-    if ([hex characterAtIndex:0] == &apos;#&apos;) {
-        [[NSScanner scannerWithString:[hex substringFromIndex:1]] scanHexInt:&amp;c];
-    } else {
-        [[NSScanner scannerWithString:hex] scanHexInt:&amp;c];
+                                <h4 id="a-helper-method-to-convert-hex-color-string-to-uicolor">A helper method to convert Hex Color string to UIColor</h4>
+<pre><code class="lang-objectivec">-(<span class="hljs-built_in">UIColor</span> *)colorFromHex:(<span class="hljs-built_in">NSString</span> *)hex {
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> c;
+    <span class="hljs-keyword">if</span> ([hex characterAtIndex:<span class="hljs-number">0</span>] == <span class="hljs-string">&apos;#&apos;</span>) {
+        [[<span class="hljs-built_in">NSScanner</span> scannerWithString:[hex substringFromIndex:<span class="hljs-number">1</span>]] scanHexInt:&amp;c];
+    } <span class="hljs-keyword">else</span> {
+        [[<span class="hljs-built_in">NSScanner</span> scannerWithString:hex] scanHexInt:&amp;c];
     }
-    return [UIColor colorWithRed:((c &amp; 0xff0000) &gt;&gt; 16)/255.0
-                           green:((c &amp; 0xff00) &gt;&gt; 8)/255.0
-                            blue:(c &amp; 0xff)/255.0 alpha:1.0];
+    <span class="hljs-keyword">return</span> [<span class="hljs-built_in">UIColor</span> colorWithRed:((c &amp; <span class="hljs-number">0xff0000</span>) &gt;&gt; <span class="hljs-number">16</span>)/<span class="hljs-number">255.0</span>
+                           green:((c &amp; <span class="hljs-number">0xff00</span>) &gt;&gt; <span class="hljs-number">8</span>)/<span class="hljs-number">255.0</span>
+                            blue:(c &amp; <span class="hljs-number">0xff</span>)/<span class="hljs-number">255.0</span> alpha:<span class="hljs-number">1.0</span>];
 }
 </code></pre>
 
@@ -514,7 +527,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"UIColor","level":"1.2.7","depth":2,"next":{"title":"NS","level":"2.1","depth":1,"path":"NS/README.md","ref":"NS/README.md","articles":[{"title":"NSCalendar","level":"2.1.1","depth":2,"path":"NS/NSCalendar.md","ref":"NS/NSCalendar.md","articles":[]},{"title":"NSDate","level":"2.1.2","depth":2,"path":"NS/NSDate.md","ref":"NS/NSDate.md","articles":[]},{"title":"NSTimer","level":"2.1.3","depth":2,"path":"NS/NSTimer.md","ref":"NS/NSTimer.md","articles":[]},{"title":"NSFileManager","level":"2.1.4","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},{"title":"NSUserDefaults","level":"2.1.5","depth":2,"path":"NS/NSUserDefaults.md","ref":"NS/NSUserDefaults.md","articles":[]},{"title":"NSObject","level":"2.1.6","depth":2,"path":"NS/NSObject.md","ref":"NS/NSObject.md","articles":[]},{"title":"NSThread","level":"2.1.7","depth":2,"path":"NS/NSThread.md","ref":"NS/NSThread.md","articles":[]}]},"previous":{"title":"UIImageView","level":"1.2.6","depth":2,"path":"UI/UIImageView.md","ref":"UI/UIImageView.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UI/UIcolor.md","mtime":"2018-06-15T06:07:29.651Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-27T08:04:08.212Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"UIColor","level":"1.2.7","depth":2,"next":{"title":"NS","level":"2.1","depth":1,"path":"NS/README.md","ref":"NS/README.md","articles":[{"title":"NSObject","level":"2.1.1","depth":2,"path":"NS/NSObject.md","ref":"NS/NSObject.md","articles":[]},{"title":"NSMutableArray","level":"2.1.2","depth":2,"path":"NS/NSMutableArray.md","ref":"NS/NSMutableArray.md","articles":[]},{"title":"NSCalendar","level":"2.1.3","depth":2,"path":"NS/NSCalendar.md","ref":"NS/NSCalendar.md","articles":[]},{"title":"NSDate","level":"2.1.4","depth":2,"path":"NS/NSDate.md","ref":"NS/NSDate.md","articles":[]},{"title":"NSTimer","level":"2.1.5","depth":2,"path":"NS/NSTimer.md","ref":"NS/NSTimer.md","articles":[]},{"title":"NSFileManager","level":"2.1.6","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},{"title":"NSUserDefaults","level":"2.1.7","depth":2,"path":"NS/NSUserDefaults.md","ref":"NS/NSUserDefaults.md","articles":[]},{"title":"NSThread","level":"2.1.8","depth":2,"path":"NS/NSThread.md","ref":"NS/NSThread.md","articles":[]}]},"previous":{"title":"UIImageView","level":"1.2.6","depth":2,"path":"UI/UIImageView.md","ref":"UI/UIImageView.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UI/UIcolor.md","mtime":"2019-03-30T14:33:35.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T14:34:35.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

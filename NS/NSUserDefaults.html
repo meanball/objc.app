@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="NSObject.html" />
+    <link rel="next" href="NSThread.html" />
     
     
     <link rel="prev" href="NSFileManager.html" />
@@ -233,72 +233,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="NSCalendar.html">
-            
-                <a href="NSCalendar.html">
-            
-                    
-                    NSCalendar
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.2" data-path="NSDate.html">
-            
-                <a href="NSDate.html">
-            
-                    
-                    NSDate
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.3" data-path="NSTimer.html">
-            
-                <a href="NSTimer.html">
-            
-                    
-                    NSTimer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="NSFileManager.html">
-            
-                <a href="NSFileManager.html">
-            
-                    
-                    NSFileManager
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.1.5" data-path="NSUserDefaults.html">
-            
-                <a href="NSUserDefaults.html">
-            
-                    
-                    NSUserDefaults
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.6" data-path="NSObject.html">
+        <li class="chapter " data-level="2.1.1" data-path="NSObject.html">
             
                 <a href="NSObject.html">
             
@@ -311,7 +246,85 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="NSThread.html">
+        <li class="chapter " data-level="2.1.2" data-path="NSMutableArray.html">
+            
+                <a href="NSMutableArray.html">
+            
+                    
+                    NSMutableArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="NSCalendar.html">
+            
+                <a href="NSCalendar.html">
+            
+                    
+                    NSCalendar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="NSDate.html">
+            
+                <a href="NSDate.html">
+            
+                    
+                    NSDate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="NSTimer.html">
+            
+                <a href="NSTimer.html">
+            
+                    
+                    NSTimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="NSFileManager.html">
+            
+                <a href="NSFileManager.html">
+            
+                    
+                    NSFileManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.7" data-path="NSUserDefaults.html">
+            
+                <a href="NSUserDefaults.html">
+            
+                    
+                    NSUserDefaults
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="NSThread.html">
             
                 <a href="NSThread.html">
             
@@ -458,17 +471,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="nsuserdefaults-set">NSUserDefaults set</h4>
-<pre><code class="lang-objective-c">- (void)customSet {
-    [[NSUserDefaults standardUserDefaults] setObject:textField.text forKey:@&quot;mainTitle&quot;];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+                                <h4 id="nsuserdefaults-setter">NSUserDefaults setter</h4>
+<pre><code class="lang-objectivec">- (<span class="hljs-keyword">void</span>)customSet {
+    [[<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults] setObject:textField.text forKey:<span class="hljs-string">@&quot;mainTitle&quot;</span>];
+    [[<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults] synchronize];
 }
-
-#### NSUserDefaults get
-
-```objective-c
-- (void)customGet {
-    NSString *title = [[NSUserDefaults standardUserDefaults] objectForKey:@&quot;mainTitle&quot;];
+</code></pre>
+<h4 id="nsuserdefaults-getter">NSUserDefaults getter</h4>
+<pre><code class="lang-objectivec">- (<span class="hljs-keyword">void</span>)customGet {
+    <span class="hljs-built_in">NSString</span> *title = [[<span class="hljs-built_in">NSUserDefaults</span> standardUserDefaults] objectForKey:<span class="hljs-string">@&quot;mainTitle&quot;</span>];
 }
 </code></pre>
 
@@ -503,7 +514,7 @@
                 </a>
                 
                 
-                <a href="NSObject.html" class="navigation navigation-next " aria-label="Next page: NSObject">
+                <a href="NSThread.html" class="navigation navigation-next " aria-label="Next page: NSThread">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -514,7 +525,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NSUserDefaults","level":"2.1.5","depth":2,"next":{"title":"NSObject","level":"2.1.6","depth":2,"path":"NS/NSObject.md","ref":"NS/NSObject.md","articles":[]},"previous":{"title":"NSFileManager","level":"2.1.4","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSUserDefaults.md","mtime":"2018-06-15T06:54:57.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-27T08:04:08.212Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NSUserDefaults","level":"2.1.7","depth":2,"next":{"title":"NSThread","level":"2.1.8","depth":2,"path":"NS/NSThread.md","ref":"NS/NSThread.md","articles":[]},"previous":{"title":"NSFileManager","level":"2.1.6","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSUserDefaults.md","mtime":"2019-03-30T14:32:41.833Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T14:34:35.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

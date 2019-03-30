@@ -1,6 +1,6 @@
-#### method to convert hex string to UIColor
+#### A helper method to convert Hex Color string to UIColor
 
-```objective-c
+```objectivec
 -(UIColor *)colorFromHex:(NSString *)hex {
     unsigned int c;
     if ([hex characterAtIndex:0] == '#') {

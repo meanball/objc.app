@@ -233,72 +233,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="NSCalendar.html">
-            
-                <a href="NSCalendar.html">
-            
-                    
-                    NSCalendar
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.2" data-path="NSDate.html">
-            
-                <a href="NSDate.html">
-            
-                    
-                    NSDate
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.1.3" data-path="NSTimer.html">
-            
-                <a href="NSTimer.html">
-            
-                    
-                    NSTimer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="NSFileManager.html">
-            
-                <a href="NSFileManager.html">
-            
-                    
-                    NSFileManager
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.5" data-path="NSUserDefaults.html">
-            
-                <a href="NSUserDefaults.html">
-            
-                    
-                    NSUserDefaults
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.6" data-path="NSObject.html">
+        <li class="chapter " data-level="2.1.1" data-path="NSObject.html">
             
                 <a href="NSObject.html">
             
@@ -311,7 +246,85 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="NSThread.html">
+        <li class="chapter " data-level="2.1.2" data-path="NSMutableArray.html">
+            
+                <a href="NSMutableArray.html">
+            
+                    
+                    NSMutableArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="NSCalendar.html">
+            
+                <a href="NSCalendar.html">
+            
+                    
+                    NSCalendar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="NSDate.html">
+            
+                <a href="NSDate.html">
+            
+                    
+                    NSDate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.5" data-path="NSTimer.html">
+            
+                <a href="NSTimer.html">
+            
+                    
+                    NSTimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="NSFileManager.html">
+            
+                <a href="NSFileManager.html">
+            
+                    
+                    NSFileManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="NSUserDefaults.html">
+            
+                <a href="NSUserDefaults.html">
+            
+                    
+                    NSUserDefaults
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="NSThread.html">
             
                 <a href="NSThread.html">
             
@@ -458,13 +471,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="call-a-method-for-every-60-seconds">call a method for every 60 seconds</h4>
-<pre><code class="lang-objecitve-c">- (void)setupYourTimer {
-    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(callMethod) userInfo:nil repeats:YES];
+                                <h4 id="call-a-method-for-every-time-interval">Call a method for every time interval</h4>
+<pre><code class="lang-objectivec"><span class="hljs-comment">//eg: every 60 seconds in example below</span>
+- (<span class="hljs-keyword">void</span>)setupYourTimer {
+    [<span class="hljs-built_in">NSTimer</span> scheduledTimerWithTimeInterval:<span class="hljs-number">60.0</span> target:<span class="hljs-keyword">self</span> selector:<span class="hljs-keyword">@selector</span>(callMethod) userInfo:<span class="hljs-literal">nil</span> repeats:<span class="hljs-literal">YES</span>];
 }
 
-- (void)callMethod {
-    //Your called method
+- (<span class="hljs-keyword">void</span>)callMethod {
+    <span class="hljs-comment">//Your called method</span>
 }
 </code></pre>
 
@@ -510,7 +524,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NSTimer","level":"2.1.3","depth":2,"next":{"title":"NSFileManager","level":"2.1.4","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},"previous":{"title":"NSDate","level":"2.1.2","depth":2,"path":"NS/NSDate.md","ref":"NS/NSDate.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSTimer.md","mtime":"2018-06-15T06:12:03.420Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-27T08:04:08.212Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NSTimer","level":"2.1.5","depth":2,"next":{"title":"NSFileManager","level":"2.1.6","depth":2,"path":"NS/NSFileManager.md","ref":"NS/NSFileManager.md","articles":[]},"previous":{"title":"NSDate","level":"2.1.4","depth":2,"path":"NS/NSDate.md","ref":"NS/NSDate.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSTimer.md","mtime":"2019-03-30T14:32:34.454Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T14:34:35.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

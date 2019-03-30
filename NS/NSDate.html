@@ -233,72 +233,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="NSCalendar.html">
-            
-                <a href="NSCalendar.html">
-            
-                    
-                    NSCalendar
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.1.2" data-path="NSDate.html">
-            
-                <a href="NSDate.html">
-            
-                    
-                    NSDate
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.3" data-path="NSTimer.html">
-            
-                <a href="NSTimer.html">
-            
-                    
-                    NSTimer
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.4" data-path="NSFileManager.html">
-            
-                <a href="NSFileManager.html">
-            
-                    
-                    NSFileManager
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.5" data-path="NSUserDefaults.html">
-            
-                <a href="NSUserDefaults.html">
-            
-                    
-                    NSUserDefaults
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.1.6" data-path="NSObject.html">
+        <li class="chapter " data-level="2.1.1" data-path="NSObject.html">
             
                 <a href="NSObject.html">
             
@@ -311,7 +246,85 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.7" data-path="NSThread.html">
+        <li class="chapter " data-level="2.1.2" data-path="NSMutableArray.html">
+            
+                <a href="NSMutableArray.html">
+            
+                    
+                    NSMutableArray
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="NSCalendar.html">
+            
+                <a href="NSCalendar.html">
+            
+                    
+                    NSCalendar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4" data-path="NSDate.html">
+            
+                <a href="NSDate.html">
+            
+                    
+                    NSDate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="NSTimer.html">
+            
+                <a href="NSTimer.html">
+            
+                    
+                    NSTimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="NSFileManager.html">
+            
+                <a href="NSFileManager.html">
+            
+                    
+                    NSFileManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="NSUserDefaults.html">
+            
+                <a href="NSUserDefaults.html">
+            
+                    
+                    NSUserDefaults
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="NSThread.html">
             
                 <a href="NSThread.html">
             
@@ -458,27 +471,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="how-to-generate-all-months-names-in-an-array">How to generate all months names in an array?</h4>
-<pre><code class="lang-objective-c">NSArray *monthlySymbols = [[[NSDateFormatter alloc] init] shortMonthSymbols];
+                                <h4 id="generate-all-months-names-in-an-array">Generate all months names in an array?</h4>
+<pre><code class="lang-objectivec"><span class="hljs-built_in">NSArray</span> *monthlySymbols = [[[<span class="hljs-built_in">NSDateFormatter</span> alloc] init] shortMonthSymbols];
 </code></pre>
 <h4 id="convert-date-to-string">Convert Date to String</h4>
-<pre><code class="lang-objective-c">NSDate *yourDate = //...;
-NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-[dateFormat setDateFormat:@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;];
-NSString *yourDateString = [dateFormat stringFromDate: yourDate];
+<pre><code class="lang-objectivec"><span class="hljs-built_in">NSDate</span> *yourDate = <span class="hljs-comment">//...;</span>
+<span class="hljs-built_in">NSDateFormatter</span> *dateFormat = [[<span class="hljs-built_in">NSDateFormatter</span> alloc] init];
+[dateFormat setDateFormat:<span class="hljs-string">@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;</span>];
+<span class="hljs-built_in">NSString</span> *yourDateString = [dateFormat stringFromDate: yourDate];
 </code></pre>
 <h4 id="convert-string-to-date">Convert String to Date</h4>
-<pre><code class="lang-objective-c">NSString *yourDateString = @&quot;2007-08-11T19:30:00Z&quot;;
-NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-[dateFormat setDateFormat:@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;];
-NSDate *yourDate = [dateFormat dateFromString: yourDateString];
+<pre><code class="lang-objectivec"><span class="hljs-built_in">NSString</span> *yourDateString = <span class="hljs-string">@&quot;2007-08-11T19:30:00Z&quot;</span>;
+<span class="hljs-built_in">NSDateFormatter</span> *dateFormat = [[<span class="hljs-built_in">NSDateFormatter</span> alloc] init];
+[dateFormat setDateFormat:<span class="hljs-string">@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;</span>];
+<span class="hljs-built_in">NSDate</span> *yourDate = [dateFormat dateFromString: yourDateString];
 </code></pre>
 <h4 id="convert-a-date-string-to-another-format-of-date-string">Convert a date string to another format of date string</h4>
-<pre><code class="lang-objective-c">NSString *inputDateString = @&quot;2007-08-11T19:30:00Z&quot;;
-NSString *outputDateString = [NSDateFormatter
+<pre><code class="lang-objectivec"><span class="hljs-built_in">NSString</span> *inputDateString = <span class="hljs-string">@&quot;2007-08-11T19:30:00Z&quot;</span>;
+<span class="hljs-built_in">NSString</span> *outputDateString = [<span class="hljs-built_in">NSDateFormatter</span>
     dateStringFromString:inputDateString
-    sourceFormat:@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;
-    destinationFormat:@&quot;h:mm:ssa &apos;on&apos; MMMM d, yyyy&quot;];
+    sourceFormat:<span class="hljs-string">@&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&apos;Z&apos;&quot;</span>
+    destinationFormat:<span class="hljs-string">@&quot;h:mm:ssa &apos;on&apos; MMMM d, yyyy&quot;</span>];
 </code></pre>
 
                                 
@@ -523,7 +536,7 @@ NSString *outputDateString = [NSDateFormatter
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NSDate","level":"2.1.2","depth":2,"next":{"title":"NSTimer","level":"2.1.3","depth":2,"path":"NS/NSTimer.md","ref":"NS/NSTimer.md","articles":[]},"previous":{"title":"NSCalendar","level":"2.1.1","depth":2,"path":"NS/NSCalendar.md","ref":"NS/NSCalendar.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSDate.md","mtime":"2019-01-17T04:58:01.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-27T08:04:08.212Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NSDate","level":"2.1.4","depth":2,"next":{"title":"NSTimer","level":"2.1.5","depth":2,"path":"NS/NSTimer.md","ref":"NS/NSTimer.md","articles":[]},"previous":{"title":"NSCalendar","level":"2.1.3","depth":2,"path":"NS/NSCalendar.md","ref":"NS/NSCalendar.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"NS/NSDate.md","mtime":"2019-03-30T14:31:40.893Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T14:34:35.523Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
